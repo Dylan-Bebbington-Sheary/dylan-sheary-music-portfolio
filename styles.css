@@ -1,0 +1,211 @@
+/* HTML Stylesheet */ /* Dylan Bebbington Sheary | dylan.sheary@student.hhs.school.nz | dylansheary714@gmail.com */
+
+
+/* Imports Links to Google Fonts to display each text element in a specific family of my chooosing */
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amita&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+
+/* Site Styles */
+
+/* Specify that the site's elements should fit in the default chrome browser page size for effects such as background gradients */ 
+/* Additionally, specify for the site to not shift 15px to the left if it's using a scrollbar, but rather remain as it was previously. */
+html {
+    height: 100%;
+    overflow-y: overlay;
+}
+
+/* The 'signature' style title featured above the page's main title */
+.signature {
+    margin-top: 40px;
+    font-family: 'Herr Von Muellerhoff', serif;
+    text-align: center;
+    margin-right: 195px;
+    color: white;
+    font-size: 39px;
+    line-height: 0.5;
+}
+/* The title dispalying 'Music Portfolio' */
+.heading {
+    font-family: 'Cinzel Decorative', cursive;
+    text-align: center;
+    color: white;
+    font-size: 45px;
+}
+
+/* Make each of the links in the Navigation section feature a white outline */
+a.navigation {
+    color: blue;
+    -webkit-text-stroke: 0.25px white;
+}
+/* If a link is hovered over with the user's cursour, increase the font size of navigation links to indicate it's interactable */
+a:hover {
+    -webkit-text-stroke: 0.25px white;
+    font-size: 31px;
+}
+/* The Site's navigation center */
+.navigation {
+    margin-top: 15px;
+    font-family: 'Iceland', sans-serif;
+    text-align: center;
+    font-size: 29px;
+    color: white;
+}
+
+/* For the text inside elements such as the intro or song description divs, specify my chosen font, font size, text colouration, text alignment and placement away from previous elements. This is defined beforehand rather than inside of each div for code efficiency. */
+section {
+    font-family: 'Play', sans-serif;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    margin-top: 33px;
+}
+
+/* Specify the appearance and propotions of a rounded, half opacity clear black background for the index page's intro. */
+.intro {
+    margin: auto; 
+    background: rgba(0, 0, 0, 0.5); 
+    height: 95px; 
+    width: 1000px;
+    padding: 11.5px;
+    border-radius: 18.5px; 
+}
+
+/* I'll delete this one soon, it's just a conveniant place to have my concept files saved and displayed. */
+.lockdown {
+    margin: auto; 
+    background: rgba(0, 0, 0, 0.5); 
+    height: 850px; 
+    height: auto; 
+    width: 1000px;
+    padding: 11.5px;
+    border-radius: 18.5px;
+}
+
+/* Change the colour of the scrollbar to fit the site's aesthetic more */
+::-webkit-scrollbar{
+    background: #358027;
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    box-shadow: 0 0 10px #00000070;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: 15px 15px;
+    border-radius: 10px;
+}
+
+/* Round the corners of the cover art and about me photo to have them match the site's aesthetic more */
+img {
+border-radius: 5px;
+}
+
+/* Specify the appearance and propotions of a rounded, half opacity clear black background for the contact page's intro. As this div also fits a google form Iframe, it's larger yet thinner than normal. */
+.contactIntro {
+    margin: auto; 
+    margin-top: 35px;
+    background: rgba(0, 0, 0, 0.5); 
+    height: 650px; 
+    width: 650px;
+    padding: 11.5px;
+    border-radius: 18.5px; 
+}
+
+/* Specify the appearance and propotions of a rounded, half opacity clear black background for the Amout Me page's 'Who Am I?' section. */
+.aboutMeIntro {
+    margin: auto; 
+    margin-top: 35px;
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.5); 
+    height: 788px; 
+    width: 1000px;
+    padding: 11.5px;
+    border-radius: 18.5px; 
+}
+
+/* Unlike the other paragraph boxes of my site, this one's height is set to 'auto', meaning that it will increase in size depending on the ammount of comments entered at any time. Aside from this, it has the same features as .aboutMeIntro, such as the half opacity background or the rounded corners. */
+.commentSection {
+    margin: auto; 
+    margin-top: 35px;
+    background: rgba(0, 0, 0, 0.5); 
+    height: auto; 
+    width: 1000px;
+    padding: 11.5px;
+    border-radius: 18.5px; 
+}
+
+/* Each of the four song description divs features the song's title at its top. To present these songs in a stylish manner, the titles are in a fancier font and are slightly larger than the text of the rest of the div. */
+.songSubtitle {
+    font-family: 'Eagle Lake', cursive;
+    font-size: 17px;
+}
+
+/* The website features four paragraph divs, one for each song. Though each div has matching proportions, two are aligned to the left (Stranger and Starlit Harmony) and the other two are aligned to the right (Starlit Odyssey and Sleeping Pills). As such, whevener a paragraph section featuring the song title, its description paragraph, its cover art and its audio element call to be part of a certain div, leftAlignSection is chosen for Stranger and Starlit Harmony and rightAlignSection is chosen for Starlit Odyssey and Sleeping Pills. If I tried to refine this process any further, the margin alignment would not be included in the div class, which would bring up alignmnet problems, so though there is some repetition between the two following text paragraph sections, this is the maximum of how refined these elements may become. */
+/* A 1000 by 200 pixel half opacity rounded square, fourty pixels below any elements above it, margined to the moderatly far left of the page. */
+.leftAlignSection {
+    margin-top: 40px;
+    margin-left: 150px;
+    background: rgba(0, 0, 0, 0.5); 
+    height: 200px; 
+    width: 1000px;
+    padding: 11.5px;
+    border-radius: 18.5px; 
+}
+
+/* A 1000 by 200 pixel half opacity rounded square, fourty pixels below any elements above it, margined to the moderatly far right of the page. */
+.rightAlignSection {
+    margin-top: 40px;
+    margin-left: 700px;
+    background: rgba(0, 0, 0, 0.5); 
+    height: 200px; 
+    width: 1000px;
+    padding: 11.5px;
+    border-radius: 18.5px; 
+}
+
+.starlitBreachAlignSection {
+    margin-top: 40px;
+    margin-left: 150px;
+    background: rgba(0, 0, 0, 0.5); 
+    height: 200px; 
+    width: 1000px;
+    padding: 11.5px;
+    border-radius: 18.5px; 
+    font-size: 15.5px;
+}
+
+/* A translucent white background behind the uer comments featured on the comments page. */
+.commentbox  {
+    background: rgba(255,255,255,0.5);
+    border-radius: 18px;
+}
+
+/* Text fixed to the bottom of the page with a black outline describing the copyright owner, which followers the user as they scroll.  */
+footer {
+    font-family: 'Iceland', cursive;
+    font-size: 22px;
+    color: white;
+    position: fixed;
+    bottom: 2px;
+    left: 32.5%;
+    right: 0%;
+    text-shadow: 2px 0 0 #000, -1px 0 0 #000, 0 2px 0 #000, 0 -1px 0 #000, 0.5px 0.5px #000, -0.5px -2px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000;
+    text-decoration: underline;     
+}
+
+/* The proportions of the copyright display in the User Comments page are different because I also mention CommentBox's copyright, as such the alignment of the fixed text is slightly different, as seen below. Otherwise, this functions the same as described in footer {} */
+.commentFooter {
+    font-family: 'Iceland', cursive;
+    font-size: 22px;
+    color: white;
+    position: fixed;
+    bottom: 2px;
+    left: 28.5%;
+    right: 0%;
+    text-shadow: 2px 0 0 #000, -1px 0 0 #000, 0 2px 0 #000, 0 -1px 0 #000, 0.5px 0.5px #000, -0.5px -2px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000;
+    text-decoration: underline;    
+}

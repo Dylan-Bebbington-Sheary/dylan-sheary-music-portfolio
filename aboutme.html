@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+    
+    <!--Link to external stylesheet-->
+  <link rel="stylesheet" href="styles.css">
+    <!--A simple icon of my face abstracted displayed on the tab icon above the search bar-->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+<!--Current Background Image-->      
+      <style>
+          body {        
+              background: url("skulls.png"), repeat linear-gradient(to right, #1d3c7a, #358027);
+          }
+      </style>
+
+      <!--Change code language to Javascript for the following two functions-->
+      <script>
+      // Change page margins to compensate for it changing size upon increasing link font size after hovering
+          function increaseMargin() {
+              var display = document.getElementsByClassName('navigation');
+              display[0].style.marginTop = '15px'
+
+          }
+          
+          function decreaseMargin() {
+             var display = document.getElementsByClassName('navigation');
+              display[0].style.marginTop = '13px';
+
+          }
+      </script>
+    
+  <head>
+      
+<!--Metadata Info-->
+<meta name="keywords" content="HTML, CSS">
+<meta name="author" content="Dylan Patrick David Bebbington Sheary">
+      
+  <title>Dylan Sheary's Music Portfolio</title>
+      <!--rename that-->
+  </head>
+    
+    
+    <body>
+        <header>    
+            <div class="signature">
+            Dylan Sheary's
+            </div>    
+            <div class="heading">
+                ∽ MUSIC PORTFOLIO ∼
+            <!-- those weird looking symbols around 'music portfolio' are actually just opposite facing tildes when displayed with the right font-->
+            </div>
+            <div class="navigation">
+                <a href="index.html" class="navigation" onmouseover="decreaseMargin()" onmouseout="increaseMargin()">Music Index</a> - 
+                <a href="contact.html" class="navigation" onmouseover="decreaseMargin()" onmouseout="increaseMargin()">Contact</a> - 
+                <a href="aboutme.html" class="navigation" onmouseover="decreaseMargin()" onmouseout="increaseMargin()">About Me</a> -
+                <a href="comments.html" class="navigation" onmouseover="decreaseMargin()" onmouseout="increaseMargin()">User Comments</a>
+            </div>
+                
+        </header>
+        
+        <!-- The site's main content -->
+        <section>
+
+        <!-- A description of myself to users completely unfamiliar and an image of myself playing the piano. -->
+        <div class="aboutMeIntro">
+            <div class="songSubtitle">Who Am I?</div>‘One and only’ might seem like a bold claim until you’re talking about someone with an eleven syllable name. In all seriousness, however, I, Dylan Patrick David Bebbington Sheary, started playing the piano eleven years ago with Heather Bolton & Key To The Keys. Since then, I’ve experimented with songs of my own design, with very mixed success at best, until I came up with one idea I thought I could take further: <br>
+            I heard two simple notes whistled once a few minutes after getting up, in early 2020. The melodic pair stuck in my head that day, for it felt like the pair were the beginning of something more, something grand. <br>
+            Rather than moving onto learning a new song in my piano lesson that night, I thought I’d ask about booting up Garageband on my Teacher’s Mac and seeing if I could put that idea together.<br>
+            Later that night, I created the first draft save of Starlit Odyssey, and began a musical journey over the next full year of my life that changed it for the better.
+            <p>
+            Ever since then, I’ve promised myself each mote of potential of a unique idea deserved to be, at the very least, recorded. Today, there are 62 voice recordings of whistlings of vague ideas, each of them with the same potential as the two notes I heard one morning only to develop them into Starlit Odyssey.
+            <p>
+            I’m just as excited as you should be to see where my musical path leads me next.
+            <!-- A photo of myself with a half grey, half dark grey photo-frame-esque outset-->
+            <img style="border:10px outset grey;" src="About%20Me%20Photo.png" width="510px" alt="A photo of myself sitting at my dual layered keyboard-synthesizer composition station.">
+            <br>The composers I’ve listened to the most that have inspired what I really want out of my own music are Rhian Sheehan (World famous in New Zealand, of course), Adam Young, Epic Mountain, Justin E. Bell, Slow Meadow, C418, Thomas Barrandon, and Andrew Prahlow. 
+            <br>Always keep an ear out for anything that can inspire you, I never knew where listening to these brilliant musicians would take me but today I can say it was well worth every minute.    
+            </div>
+            <!-- Register space for the copyright to not be displayed over the last of the text.-->
+            <br><br>
+
+        
+        
+        </section>
+        
+        <!--Display the copyright owner-->
+        <footer>
+            
+            All design elements & audio &copy; Dylan Patrick David Bebbington Sheary 2021. 
+            
+        </footer>
+        
+    </body>
+    
+</html>
