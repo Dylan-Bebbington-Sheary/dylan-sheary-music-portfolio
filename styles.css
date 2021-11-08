@@ -196,16 +196,3 @@ footer {
     text-shadow: 2px 0 0 #000, -1px 0 0 #000, 0 2px 0 #000, 0 -1px 0 #000, 0.5px 0.5px #000, -0.5px -2px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000;
     text-decoration: underline;     
 }
-
-/* The proportions of the copyright display in the User Comments page are different because I also mention CommentBox's copyright, as such the alignment of the fixed text is slightly different, as seen below. Otherwise, this functions the same as described in footer {} */
-.commentFooter {
-    font-family: 'Iceland', cursive;
-    font-size: 22px;
-    color: white;
-    position: fixed;
-    bottom: 2px;
-    left: 0;
-    right: 0%;
-    text-shadow: 2px 0 0 #000, -1px 0 0 #000, 0 2px 0 #000, 0 -1px 0 #000, 0.5px 0.5px #000, -0.5px -2px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000;
-    text-decoration: underline;    
-}
