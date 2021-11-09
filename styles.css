@@ -178,6 +178,17 @@ border-radius: 5px;
     font-size: 15.5px;
 }
 
+.starlitLegacyAlignSection {
+    margin-top: 40px;
+    margin-left: 700px;
+    background: rgba(0, 0, 0, 0.5); 
+    height: 200px; 
+    width: 1000px;
+    padding: 11.5px;
+    border-radius: 18.5px; 
+    font-size: 16px;
+}
+
 /* A translucent white background behind the uer comments featured on the comments page. */
 .commentbox  {
     background: rgba(255,255,255,0.5);
