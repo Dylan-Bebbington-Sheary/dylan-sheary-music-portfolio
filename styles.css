@@ -15,7 +15,15 @@
 /* Additionally, specify for the site to not shift 15px to the left if it's using a scrollbar, but rather remain as it was previously. */
 html {
     height: 100%;
+    width: 100%;
     overflow-y: overlay;
+}
+
+/* Current Background Image, opened in CSS but in this file for fast changes */
+body {
+    background: #358027;
+    background: url("skulls.png"), linear-gradient(to right, #1d3c7a, #358027);
+    background-repeat: repeat;
 }
 
 /* The 'signature' style title featured above the page's main title */
@@ -133,10 +141,11 @@ border-radius: 5px;
     font-size: 17px;
 }
 
-/* The website features four paragraph divs, one for each song. Though each div has matching proportions, two are aligned to the left (Stranger and Starlit Harmony) and the other two are aligned to the right (Starlit Odyssey and Sleeping Pills). As such, whevener a paragraph section featuring the song title, its description paragraph, its cover art and its audio element call to be part of a certain div, leftAlignSection is chosen for Stranger and Starlit Harmony and rightAlignSection is chosen for Starlit Odyssey and Sleeping Pills. If I tried to refine this process any further, the margin alignment would not be included in the div class, which would bring up alignmnet problems, so though there is some repetition between the two following text paragraph sections, this is the maximum of how refined these elements may become. */
+/* The website features four paragraph divs, one for each song. Though each div has matching proportions, two are aligned to the left (Stranger and Starlit Harmony) and the other two are aligned to the right (Starlit Odyssey and Sleeping Pills). As such, whevener a paragraph section featuring the song title, its description paragraph, its cover art and its audio element call to be part of a certain div, leftAlignSection is chosen for Stranger and Starlit Harmony and rightAlignSection is chosen for Starlit Odyssey and Sleeping Pills (etc..). */
 /* A 1000 by 200 pixel half opacity rounded square, fourty pixels below any elements above it, margined to the moderatly far left of the page. */
 .leftAlignSection {
     margin-top: 40px;
+    float: left;
     margin-left: 8%;
     background: rgba(0, 0, 0, 0.5); 
     height: 200px; 
@@ -148,7 +157,8 @@ border-radius: 5px;
 /* A 1000 by 200 pixel half opacity rounded square, fourty pixels below any elements above it, margined to the moderatly far right of the page. */
 .rightAlignSection {
     margin-top: 40px;
-    margin-left: 36%;
+    float: right;
+    margin-right: 8%;
     background: rgba(0, 0, 0, 0.5); 
     height: 200px; 
     width: 1000px;
@@ -158,6 +168,7 @@ border-radius: 5px;
 
 .starlitBreachAlignSection {
     margin-top: 40px;
+    float: left;
     margin-left: 8%;
     background: rgba(0, 0, 0, 0.5); 
     height: 200px; 
@@ -169,12 +180,13 @@ border-radius: 5px;
 
 .starlitLegacyAlignSection {
     margin-top: 40px;
-    margin-left: 36%;
+    float: right;
+    margin-right: 8%;
     background: rgba(0, 0, 0, 0.5); 
     height: 200px; 
     width: 1000px;
     padding: 11.5px;
-    border-radius: 18.5px; 
+    border-radius: 18.5px;  
     font-size: 15.5px;
 }
 
