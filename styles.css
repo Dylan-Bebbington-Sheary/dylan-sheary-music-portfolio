@@ -84,17 +84,34 @@ section {
 }
 
 /* Change the colour of the scrollbar to fit the site's aesthetic more */
+::-webkit-scrollbar:horizontal{
+    background: linear-gradient(to right, #1d3c7a, #358027);
+    width: 15px;
+}
+::-webkit-scrollbar-track:horizontal{
+    box-shadow: 0 0 10px #00000070;
+
+}
+::-webkit-scrollbar-thumb:horizontal{
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: 15px 15px;
+    border-radius: 10px;
+}
 ::-webkit-scrollbar{
     background: #358027;
     width: 15px;
 }
 ::-webkit-scrollbar-track{
     box-shadow: 0 0 10px #00000070;
+
 }
 ::-webkit-scrollbar-thumb{
     background-color: rgba(0, 0, 0, 0.5);
     background-size: 15px 15px;
     border-radius: 10px;
+}
+::-webkit-scrollbar-corner{
+    background: #358027;
 }
 
 /* Round the corners of the cover art and about me photo to have them match the site's aesthetic more */
