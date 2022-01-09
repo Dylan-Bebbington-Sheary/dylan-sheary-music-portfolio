@@ -15,8 +15,8 @@
 /* Additionally, specify for the site to not shift 15px to the left if it's using a scrollbar, but rather remain as it was previously. */
 html {
     height: 100%;
-    width: 100%;
     overflow-y: overlay;
+    min-width: 100%;
 }
 
 /* Current Background Image, opened in CSS but in this file for fast changes */
@@ -24,6 +24,7 @@ body {
     background: #358027;
     background: url("skulls.png"), linear-gradient(to right, #1d3c7a, #358027);
     background-repeat: repeat;
+    background-attachment: fixed;
 }
 
 /* The 'signature' style title featured above the page's main title */
