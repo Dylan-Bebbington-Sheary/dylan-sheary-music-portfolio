@@ -205,7 +205,7 @@ border-radius: 5px;
     width: 1000px;
     padding: 11.5px;
     border-radius: 18.5px;  
-    font-size: 15.5px;
+    font-size: 15px;
 }
 
 /* A translucent white background behind the user comments featured on the comments page. */
@@ -225,4 +225,61 @@ footer {
     right: 1%;
     text-shadow: 2px 0 0 #000, -1px 0 0 #000, 0 2px 0 #000, 0 -1px 0 #000, 0.5px 0.5px #000, -0.5px -2px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000;
     text-decoration: underline;     
+}
+
+/*/* Different size specifications for divs when they are displayed on small devices such as phones to make the site display in a functional manner. This part isn't finished yet.*/
+/*@media only screen and (max-width: 4000px) {
+    .intro {
+        margin: auto; 
+        background: rgba(0, 0, 0, 0.5); 
+        height: 95px; 
+        width: auto;
+        padding: 11.5px;
+        border-radius: 18.5px; 
+}
+    
+    .leftAlignSection {
+        margin-top: 40px;
+        background: rgba(0, 0, 0, 0.5); 
+        height: 600px; 
+        width: auto;
+        padding: 11.5px;
+        border-radius: 18.5px; 
+    }
+
+    /* A 1000 by 200 pixel half opacity rounded square, fourty pixels below any elements above it, margined to the moderatly far right of the page. */
+   /* .rightAlignSection {
+        margin-top: 40px;
+        float: right;
+        margin-right: 8%;
+        background: rgba(0, 0, 0, 0.5); 
+        height: 200px; 
+        width: 1000px;
+        padding: 11.5px;
+        border-radius: 18.5px; 
+    }
+
+    .starlitBreachAlignSection {
+        margin-top: 40px;
+        float: left;
+        margin-left: 8%;
+        background: rgba(0, 0, 0, 0.5); 
+        height: 200px; 
+        width: 1000px;
+        padding: 11.5px;
+        border-radius: 18.5px; 
+        font-size: 15.5px;
+    }
+
+    .starlitLegacyAlignSection {
+        margin-top: 40px;
+        float: right;
+        margin-right: 8%;
+        background: rgba(0, 0, 0, 0.5); 
+        height: 200px; 
+        width: 1000px;
+        padding: 11.5px;
+        border-radius: 18.5px;  
+        font-size: 15.5px;
+    } */
 }
